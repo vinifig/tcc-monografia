@@ -1,0 +1,44 @@
+
+\chapter{Materiais e Métodos}
+\label{metodologia}
+Este capítulo descreve o modo como a pesquisa e o desenvolvimento do framework
+ sugerido na \autoref{objetivos} será conduzida.
+
+\section{Tecnologias utilizadas}
+A escolhas das tecnologias seguem de acordo com a arquitetura do sistema.
+
+\subsection{Javascript}
+Para desenvolvimento do \emph{Framework} será utilizada a linguagem \emph{Javascript},
+uma linguagem altamente difundida para desenvolvimento de páginas web.
+
+Nos últimos anos a linguagem passou a ser usada também para desenvolvimento de
+aplicações para servidor.
+
+\subsection{Node.js}
+Será utilizado o \emph{Node.js} como plataforma de execução do framework, ele
+conta com recursos nativos do Sistema Operacional o que o torna extremamente
+viável para o framework.
+
+\subsection{Desenvolvimento}
+Ao final do desenvolvimento, deveremos ter uma Aplicação, para realizar o
+processamento das tarefas distribuídas, e um \emph{Framework} capaz de distribuir
+tarefas em outras máquinas.
+
+
+\subsubsection{Conexão}
+O \emph{Framework} em sua inicialização receberá as informações, como
+endere\c{c}o e detalhes de autenticação dos servidores que contém a aplicação que
+processará as tarefas.
+
+\subsubsection{Distribui\c{c}\~{a}o de tarefas}
+O \emph{Framework} utilizará classes para:
+\begin{itemize}
+  \item Criação das tarefas;
+  \item Configuração das tarefas;
+  \item Distribuição das tarefas;
+\end{itemize}
+\subsubsection{Aplicação para execução das tarefas}
+A aplicação para distribuição também será feita utilizando \emph{Javascript} e
+\emph{Node.js}. Ela interpretará a tarefas recebida e responderá para o
+\emph{Framework} se ela foi executada corretamente ou não. Em caso de
+\emph{MapReduce} também responderá com os dados processados.
